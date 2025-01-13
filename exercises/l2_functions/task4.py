@@ -1,6 +1,11 @@
+
 # Declare and write the body of the function named `my_len`.
 # This function should accept an Iterable as a parameter
 # and return its length
+
+
+def my_len(length) -> int:
+    return len(length)
 
 
 # Do not change the below's code

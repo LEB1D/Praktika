@@ -1,7 +1,10 @@
 
 # Modify this function to make the script work without errors.
-def multiply(a: int, b: int) -> int:
-    return a * b
+def multiply(a: int, b: int | None = None) -> int:
+    if b is None:
+        return 0
+    else:
+        return a * b
 
 
 # Do not change the below's code

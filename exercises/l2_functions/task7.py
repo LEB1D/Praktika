@@ -1,5 +1,8 @@
 # Declare the function named `greet` and write its body
 # the way that it fixes all errors in the script
+def greet(name):
+    return "Hello, " + name + "!"
+
 
 # Do not change the below's code
 if __name__ == "__main__":

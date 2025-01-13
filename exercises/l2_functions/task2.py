@@ -5,6 +5,9 @@
 # by whitespace ' '.
 #
 # For example, call of `join("a", "b")` should return "a b"
+def join(str1: str, str2: str) -> str:
+
+    return str1 + " " + str2
 
 
 # Do not change the below's code
