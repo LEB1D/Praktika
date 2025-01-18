@@ -5,7 +5,10 @@ from typing import Any
 # is present in the list `l`.
 # Return `True` if present and `False` otherwise
 def contains(l: list[Any], val: Any) -> bool:
-    pass
+    for element in l:
+        if element == val:
+            return True
+    return False
 
 
 # Do not change the below's code
