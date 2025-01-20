@@ -9,7 +9,14 @@
 # For example,
 # take("abcd", 2, True) -> "cd"
 def take(s: str, n: int, last: bool = False) -> str:
-    pass
+    if n <= 0:
+        return ""
+    if last:
+        k = min(len(s), n)  # Use min here, take n or len(s) at max.
+        return s[-k:] if len(s) > 0 else ""  # Take from the end of string
+    else:
+        k = min(len(s), n)
+        return s[:k]
 
 
 # Do not change the below's code
