@@ -13,7 +13,7 @@ def take(s: str, n: int, last: bool = False) -> str:
         return ""
     if last:
         k = min(len(s), n)  # Use min here, take n or len(s) at max.
-        return s[-k:] if len(s) > 0 else ""  # Take from the end of string
+        return s[-k:]  # Take from the end of string
     else:
         k = min(len(s), n)
         return s[:k]

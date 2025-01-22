@@ -3,8 +3,7 @@
 def multiply(a: int, b: int | None = None) -> int:
     if b is None:
         return 0
-    else:
-        return a * b
+    return a * b
 
 
 # Do not change the below's code
