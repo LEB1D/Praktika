@@ -5,12 +5,15 @@ from typing import Any
 # NOTE: the function should create a new dictionary. Do not modify dictionaries
 # passed to the function as arguments
 def merge(d1: dict[Any, Any], d2: dict[Any, Any]) -> dict[Any, Any]:
-    pass
+    merged_dict = d1.copy()
+    merged_dict.update(d2)
+    return merged_dict
 
 
 # Do not change the below's code
 if __name__ == "__main__":
-    assert merge({"a": 1, "b": 2}, {"c": 3, "d": 4}) == {"a": 1, "b": 2, "c": 3, "d": 4}
+    assert merge({"a": 1, "b": 2}, {"c": 3, "d": 4}) == {
+        "a": 1, "b": 2, "c": 3, "d": 4}
 
     d1, d2 = {"a": 1}, {"b": 1}
     assert merge(d1, d2) == {"a": 1, "b": 1}
