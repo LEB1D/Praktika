@@ -8,8 +8,11 @@ L10_PATH = Path(__file__).parent
 # Use `open` function!
 #
 # HINT. Don't forget to close file
+
+
 def read(path: Path) -> str:
-    pass
+    with open(path, "r", encoding="utf-8") as file:
+        return file.read()
 
 
 # Do not modify the code below
